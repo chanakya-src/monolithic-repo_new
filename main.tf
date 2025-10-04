@@ -3,7 +3,7 @@ resource "aws_launch_template" "web_server_as" {
     image_id           = "ami-03c4f11b50838ab5d"
     vpc_security_group_ids = [aws_security_group.web_server.id]
     instance_type = "t2.micro"
-    # REMOVE THIS LINE: key_name = "terraform03_10north Virginia"
+    key_name = "terraform03/10north Virginia"
     tags = {
         Name = "DevOps"
     }
